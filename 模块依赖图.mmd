@@ -1,0 +1,38 @@
+flowchart LR
+  subgraph 基础模块
+    telemetry[telemetry]
+    schema[schema]
+    tui[tui]
+    codemode[codemode]
+    mcp[mcp]
+  end
+  subgraph 中间模块
+    chord[chord]
+    ai[ai]
+  end
+  subgraph 运行时模块
+    durable[durable]
+    agent[agent]
+  end
+  subgraph 应用支持模块
+    env[env]
+    coding_agent[coding-agent]
+  end
+  chord --> schema
+  chord --> telemetry
+  ai --> schema
+  ai --> telemetry
+  durable --> chord
+  durable --> ai
+  durable --> codemode
+  durable --> schema
+  durable --> telemetry
+  env --> chord
+  env --> durable
+  agent --> ai
+  agent --> schema
+  coding_agent --> agent
+  coding_agent --> ai
+  coding_agent --> codemode
+  coding_agent --> mcp
+  coding_agent --> tui
