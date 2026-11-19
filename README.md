@@ -1,6 +1,6 @@
 # 实践课 2：组织建仓与 Pi Agent 源码分析——阳凌杰
 
-> 姓名：阳凌杰（Yang Lingjie）。个人作业仓库：https://github.com/3524967016ylj-jpg/Pi-Agent-Practice-2 。本报告依据本地仓库 `D:\study\开源\pi-hunnu-2026` 的 `main` 分支、提交 `c3cc91632d0a1950fb122605b190233f2aa0006e` 编写。本人重点复核的模块：`telemetry`、`ai`、`coding-agent`。
+> 姓名：阳凌杰（Yang Lingjie）。个人作业仓库：https://github.com/3524967016ylj-jpg/Pi-Agent-Practice-2 。本报告依据本地仓库 `D:\study\开源\pi-hunnu-2026` 的 `main` 分支、提交 `c3cc91632d0a1950fb122605b190233f2aa0006e` 编写。拟作为本人重点分析的模块（请本人阅读后确认）：`telemetry`、`ai`、`coding-agent`。
 
 ## 一、源码获取与目录
 
