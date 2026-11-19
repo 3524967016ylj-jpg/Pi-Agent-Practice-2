@@ -123,6 +123,3 @@ flowchart LR
 
 例如用户在 CLI 中发起一次任务时，入口由 `coding-agent` 接收，`agent` 推进一轮工作，`ai` 与选定的模型服务交互，数据校验能力由底层 `schema` 提供。这个例子说明分工；它**不表示每次模型请求都会逐个调用这四个模块的同名函数**。路径的直接依赖依据是上述三个使用方各自的 `package.json`，功能依据是对应模块的 `README.md` 与源码入口。
 
----
-
-**分析依据**：[课程作业要求](https://github.com/hunnuOpenSourceSoftware2026/assignments/blob/main/practice/02-Pi-Agent-fork.md)、该提交中的根及各模块 `package.json`、`README.md`、构建配置和相关源码。报告按给定提交分析；若之后同步上游，模块与脚本可能变化，应重新核对。
